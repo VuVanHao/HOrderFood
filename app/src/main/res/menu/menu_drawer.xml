@@ -16,21 +16,21 @@
         <item
             android:id="@+id/table"
             android:icon="@drawable/table"
-            android:title="Share"/>
+            android:title="Quản lí bàn ăn"/>
 
         <item
             android:id="@+id/diet"
             android:icon="@drawable/diet"
-            android:title="Rate"/>
+            android:title="Thực đơn"/>
 
         <item
             android:id="@+id/staff"
             android:icon="@drawable/staff"
-            android:title="Rate"/>
+            android:title="Nhân viên"/>
 
         <item
             android:id="@+id/logout"
             android:icon="@drawable/ic_baseline_logout_24"
-            android:title="Rate"/>
+            android:title="Logout"/>
     </group>
 </menu>
