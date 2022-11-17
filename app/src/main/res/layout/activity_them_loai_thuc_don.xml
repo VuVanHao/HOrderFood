@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".ActivityThemLoaiThucDon"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/imgGoToBackListLoaiThucDon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="30dp"
+        android:src="@drawable/ic_baseline_arrow_back_24"
+        />
+
+    <TextView
+        android:textColor="@color/teal_700"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thêm loại thực đơn"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        app:cardCornerRadius="30dp">
+
+        <ImageView
+            android:id="@+id/imgTypeOfFood"
+            android:src="@drawable/bg_type_food"
+            android:scaleType="fitXY"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+    </androidx.cardview.widget.CardView>
+
+    <EditText
+        android:id="@+id/edtTenLoaiThucDon"
+        android:layout_marginTop="20dp"
+        android:textSize="25sp"
+        android:paddingStart="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tên loại thực đơn"
+        android:textColorHint="#9F9B9B"
+        android:background="@drawable/bg_edittext_type_food"
+        android:textColor="@color/black"/>
+
+    <Button
+        android:id="@+id/btnThemLoaiThucDon"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/teal_700"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="100dp"
+        android:textColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thêm loại"/>
+
+    <Button
+        android:id="@+id/btnGoToBackListLoaiThucDon"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/white"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hủy"/>
+
+
+</LinearLayout>

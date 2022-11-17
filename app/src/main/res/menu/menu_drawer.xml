@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <group android:checkableBehavior="single">
+        <item
+            android:title="Trang chủ"
+            android:icon="@drawable/ic_baseline_home_24"
+            android:id="@+id/android"/>
+
+        <item
+            android:title="Thống kê"
+            android:icon="@drawable/thongke"
+            android:id="@+id/mail"/>
+
+        <item
+            android:id="@+id/table"
+            android:icon="@drawable/table"
+            android:title="Share"/>
+
+        <item
+            android:id="@+id/diet"
+            android:icon="@drawable/diet"
+            android:title="Rate"/>
+
+        <item
+            android:id="@+id/staff"
+            android:icon="@drawable/staff"
+            android:title="Rate"/>
+
+        <item
+            android:id="@+id/logout"
+            android:icon="@drawable/ic_baseline_logout_24"
+            android:title="Rate"/>
+    </group>
+</menu>

@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityRegister"
+    android:orientation="vertical"
+    android:background="#F8F7FC">
+
+    <LinearLayout
+        android:layout_gravity="start"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imgGoToLogin"
+            android:layout_marginStart="20dp"
+            android:layout_width="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_baseline_arrow_back_ios_24"/>
+
+        <TextView
+            android:paddingBottom="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="70dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Đăng ký"
+            android:textColor="#FF8C00"
+            android:textSize="45sp"
+            android:layout_gravity="center"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tên đăng nhập"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_marginTop="35dp"
+        android:layout_marginStart="25dp"/>
+
+    <EditText
+        android:id="@+id/tvUsernameRegister"
+        android:layout_width="match_parent"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/bg_edittext_login"
+        android:layout_height="40dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="25dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mật khẩu"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="25dp"/>
+
+    <EditText
+        android:inputType="textPassword"
+        android:id="@+id/tvPasswordRegister"
+        android:layout_width="match_parent"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/bg_edittext_login"
+        android:layout_height="40dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="25dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Giới tính"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="25dp"/>
+
+    <RadioGroup
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/rbNam"
+            android:layout_marginEnd="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nam"
+            android:textColor="@color/black"
+            android:checked="true"
+            android:textSize="20sp"
+            />
+
+        <RadioButton
+            android:id="@+id/rbNu"
+            android:layout_marginStart="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nữ"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            />
+
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ngày sinh"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="25dp"/>
+
+    <EditText
+        android:clickable="false"
+        android:cursorVisible="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:id="@+id/tvDataRegister"
+        android:layout_width="match_parent"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/bg_edittext_login"
+        android:layout_height="40dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="25dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CMND"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="25dp"/>
+
+    <EditText
+        android:id="@+id/tvCMNDRegister"
+        android:layout_width="match_parent"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/bg_edittext_login"
+        android:layout_height="40dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="25dp"/>
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="match_parent"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginTop="20dp"
+        android:text="Đăng ký"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_button_login"/>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Đã có tài khoản?"
+            android:layout_gravity="center"
+            android:textColor="@color/black"
+            android:layout_marginTop="5dp"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Đăng nhập"
+            android:layout_marginStart="5dp"
+            android:layout_gravity="center"
+            android:textColor="#FF8C00"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

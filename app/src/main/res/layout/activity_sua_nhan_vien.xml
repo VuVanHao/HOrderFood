@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".ActivitySuaNhanVien">
+
+    <ImageView
+        android:id="@+id/imgGoToBackListStaff1"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="30dp"
+        android:src="@drawable/ic_baseline_arrow_back_24"
+        />
+
+    <TextView
+        android:textColor="@color/teal_700"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_marginTop="-10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sửa nhân viên"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tên đăng nhập"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="25dp"/>
+
+    <EditText
+        android:id="@+id/tvUsernameSuaStaff"
+        android:layout_width="match_parent"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/bg_edittext_login"
+        android:layout_height="40dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="25dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mật khẩu cũ"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="25dp"/>
+
+    <EditText
+        android:inputType="textPassword"
+        android:id="@+id/tvPasswordSuaStaff"
+        android:layout_width="match_parent"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/bg_edittext_login"
+        android:layout_height="40dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="25dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mật khẩu mới"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="25dp"/>
+
+    <EditText
+        android:inputType="textPassword"
+        android:id="@+id/tvPasswordSuaStaffAgain"
+        android:layout_width="match_parent"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/bg_edittext_login"
+        android:layout_height="40dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="25dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Giới tính"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="25dp"/>
+
+    <RadioGroup
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/rbNamSuaStaff"
+            android:layout_marginEnd="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nam"
+            android:textColor="@color/black"
+            android:checked="true"
+            android:textSize="20sp"
+            />
+
+        <RadioButton
+            android:id="@+id/rbNuSuaStaff"
+            android:layout_marginStart="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nữ"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            />
+
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ngày sinh"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="25dp"/>
+
+    <EditText
+        android:id="@+id/tvDateSuaStaff"
+        android:layout_width="match_parent"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/bg_edittext_login"
+        android:layout_height="40dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="25dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CMND"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="25dp"/>
+
+    <EditText
+        android:id="@+id/tvCMNDSuaStaff"
+        android:layout_width="match_parent"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/bg_edittext_login"
+        android:layout_height="40dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="25dp"/>
+
+    <Button
+        android:id="@+id/btnSuaNhanVien"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#FF8C00"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="100dp"
+        android:textColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sửa nhân viên"/>
+
+    <Button
+        android:id="@+id/btnGoToBackListStaff1"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hủy"/>
+
+</LinearLayout>
